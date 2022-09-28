@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/back_panel"
+    android:layout_height="match_parent"
+>
+    <ImageView
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/back_image_back" />
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/panel_background"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Panel_Content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/panel_background"
+            android:id="@+id/Back_Image" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:text="Holiday Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_margin="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/TextMod"
+                android:id="@+id/Holidays_txt" />
+            <LinearLayout
+                android:text="Counter"
+                android:layout_width="match_parent"
+                android:textColor="#000000"
+                android:background="@drawable/TextMod"
+                android:gravity="center"
+                android:layout_margin="25dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/Counter_txt"
+                android:orientation="vertical">
+                <TextView
+                    android:text="Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Counter_1_id"
+                    android:gravity="center"
+                    android:layout_margin="25dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                     />
+                <TextView
+                    android:text="Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="25dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:id="@+id/Counter_2_id" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <Button
+            android:text="Previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textColor="#FC4445"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:cornerRadius="80dp"
+            android:id="@+id/button_Previous" />
+        <Button
+            android:text="Next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#FC4445"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:cornerRadius="80dp"
+            android:id="@+id/button_Next"
+            tools:ignore="XmlNamespace"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
